@@ -5,8 +5,11 @@ on:
   pull_request:
     branches: [ "main" ]
   workflow_dispatch:
-  
-permissions: write-all
+
+permissions:
+  contents: read
+  actions: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
